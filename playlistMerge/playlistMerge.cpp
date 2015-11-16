@@ -6,6 +6,7 @@
 #include <commdlg.h>
 #include "playlistMerge.h"
 #include <string>
+
 #define MAX_LOADSTRING 100
 #define FILE_OPEN_1 10
 #define FILE_OPEN_2 11

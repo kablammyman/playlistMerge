@@ -1,7 +1,7 @@
 #pragma once
 
 #include "resource.h"
-#include <hash_map>
+#include <map>
 #include <string>
 #include <iostream>
 #include <fstream>
@@ -12,7 +12,7 @@ string masterFilePath = "";
 string addFilePath = "";
 int numDupes = 0;
 
-hash_map<string, string>  masterPlayListEntry;
+map<string, string>  masterPlayListEntry;
 typedef pair <string, string> dataPair;
 
 
@@ -61,7 +61,7 @@ void updatePlaylist(string masterPlaylistPath)
 
 	m3uFile << "#EXTM3U\n";
 
-	for(hash_map<string, string>::const_iterator i = masterPlayListEntry.begin(); i != masterPlayListEntry.end(); ++i)
+	for(map<string, string>::const_iterator i = masterPlayListEntry.begin(); i != masterPlayListEntry.end(); ++i)
 	{
 		//string title = i->second;
 		//string path = i->first;
